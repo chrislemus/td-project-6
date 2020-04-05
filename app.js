@@ -15,7 +15,7 @@ const phrases = [
 
 // returns a random phrase from the array
 const getRandomPhraseAsArray = arr => {
-    const randomPick = Math.floor(Math.random() * arr.length)
+    const randomPick = Math.floor(Math.random() * arr.length);
     return arr[randomPick];
 }
 
