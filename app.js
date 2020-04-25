@@ -102,7 +102,6 @@ keyboard.addEventListener('click', e => {
     if ( event.target.tagName === 'BUTTON') {
         const button = event.target;
         const notYetChosen = button.className.indexOf('chosen') < 0;
-        checkWin();
         if (notYetChosen) {
             button.className += 'chosen';
             const letterFound = checkLetter(button.textContent);
@@ -111,5 +110,6 @@ keyboard.addEventListener('click', e => {
                 missed += 1;
             }
         }
+        checkWin();
     }
 });
